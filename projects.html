@@ -3,57 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+
+    <title>jc.labastida</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/projects.css">
 </head>
+
 <body>
 
-<!-- NAV -->
+<!-- NAVBAR -->
 <header>
   <nav class="navbar">
-    <h2 class="logo">MyPortfolio</h2>
+
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo">
+      <span class="animate-shine">jc.labastida</span>
+    </a>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button id="themeToggle">Theme</button>
+
+    <div class="nav-controls">
+      <button id="themeToggle" class="theme-toggle">
+        <span class="icon"></span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+
   </nav>
 </header>
 
-<section class="page-section">
-  <h1>Projects</h1>
+<!-- PROJECT SECTION -->
+<section class="projects">
 
-  <div class="filters">
-    <button data-filter="all">All</button>
-    <button data-filter="web">Web Apps</button>
-    <button data-filter="ui">UI Design</button>
-    <button data-filter="game">Games</button>
+  <div class="projects-header">
+    <h1>My Projects</h1>
+    <p>Selected works showcasing video editing, design, and development projects.</p>
+
+    <!-- FILTER BUTTONS -->
+    <div class="project-filters">
+      <button onclick="filterProjects('all')" class="active">All</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="video">Video Editing</button>
+      <button class="filter-btn" data-filter="canva">Canva Designs</button>
+      <button class="filter-btn" data-filter="game">App / Game</button>
+    </div>
   </div>
 
-  <div class="projects-container">
+  <div class="projects-grid">
 
-    <div class="project-card web">
-      <h3>Resort Booking System</h3>
+    <!-- PROJECT 1: SHORT FILM -->
+    <div class="project-card" data-category="video">
+
+      <video class="project-media" autoplay muted loop>
+        <source src="images/nightwalk.mp4" type="video/mp4">
+      </video>
+
+      <div class="project-content">
+        <h2>Night Walk Short Film</h2>
+
+        <p class="short">
+          A simple short film capturing a night walk scene in a bazaar with food stalls, edited using CapCut.
+        </p>
+
+        <button class="view-btn" onclick="toggleProject(this)">
+          View Details
+        </button>
+
+        <div class="details">
+          <h3>Description</h3>
+          <p>A casual short film project showing a night walk experience in a lively street market environment.</p>
+
+          <h3>Tools</h3>
+          <p>CapCut</p>
+
+          <h3>Category</h3>
+          <p>Video Editing</p>
+
+          <a href="images/nightwalk.mp4" target="_blank" class="video-link">
+            ▶ Watch The Video
+          </a>
+        </div>
+
+      </div>
     </div>
 
-    <div class="project-card ui">
-      <h3>Figma UI Design</h3>
+    <!-- PROJECT 2 -->
+    <div class="project-card" data-category="canva">
+
+      <video class="project-media" autoplay muted loop>
+        <source src="images/flower.mp4" type="video/mp4">
+      </video>
+
+      <div class="project-content">
+        <h2>Flower Bouquet Collection</h2>
+
+        <p class="short">
+          Social media marketing design for a flower business.
+        </p>
+
+        <button class="view-btn" onclick="toggleProject(this)">
+          View Details
+        </button>
+
+        <div class="details">
+          <h3>Description</h3>
+          <p>Facebook marketing design for flower bouquet promotion.</p>
+
+          <h3>Tools</h3>
+          <p>Canva</p>
+
+          <h3>Category</h3>
+          <p>Design</p>
+
+          <a href="https://canva.link/b103loiuvej6o7j" target="_blank">View Design</a>
+        </div>
+      </div>
     </div>
 
-    <div class="project-card game">
-      <h3>JavaScript Game</h3>
+    <!-- PROJECT 3 -->
+    <div class="project-card" data-category="game">
+
+      <video class="project-media" autoplay muted loop>
+        <source src="images/movingball.mp4" type="video/mp4">
+      </video>
+
+      <div class="project-content">
+        <h2>Tap the Moving Ball</h2>
+
+        <p class="short">
+          Simple Android game with scoring system and random movement.
+        </p>
+
+        <button class="view-btn" onclick="toggleProject(this)">
+          View Details
+        </button>
+
+        <div class="details">
+          <h3>Description</h3>
+          <p>Interactive tapping game with score tracking and random object movement.</p>
+
+          <h3>Technologies</h3>
+          <p>Java, Android Studio, XML</p>
+
+          <h3>Category</h3>
+          <p>Game Development</p>
+
+          <h3>Link</h3>
+          <a href="images/movingball.mp4" target="_blank" class="video-link">
+            ▶ Watch The Video
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <!-- PROJECT 4 (YOUR PORTFOLIO WEBSITE) -->
+  <div class="project-card" data-category="web">
+
+    <img class="project-media" src="images/portfolio-preview.png" alt="Portfolio Website">
+
+    <div class="project-content">
+      <h2>Personal Portfolio Website</h2>
+
+      <p class="short">
+        A fully responsive personal portfolio showcasing skills, projects, and contact system.
+      </p>
+
+      <button class="view-btn" onclick="toggleProject(this)">
+        View Details
+      </button>
+
+      <div class="details">
+        <h3>Description</h3>
+        <p>
+          A modern portfolio website built to present my work, skills, and creative projects in a clean and responsive layout.
+        </p>
+
+        <h3>Technologies</h3>
+        <p>HTML, CSS, JavaScript</p>
+
+        <h3>Category</h3>
+        <p>Web Development</p>
+
+        <!-- LINKS SECTION -->
+        <div class="project-links">
+          <a href="https://your-live-site-link.com" target="_blank" class="view-btn live-btn">
+            🔗 Live Site
+          </a>
+
+          <a href="https://github.com/your-username/your-repo" target="_blank" class="view-btn github-btn">
+            <i data-lucide="github"></i> GitHub Repo
+          </a>
+
+        </div>
+      </div>
     </div>
 
   </div>
+
+  </div>
+  </div>
+
 </section>
 
-<script src="js/script.js"></script>
 
 <footer class="footer">
-  <p>© 2025 Ernie Joseph Cledera. All rights reserved.</p>
+  <p>© 2026 Jasmen Chelsie Labastida. All rights reserved.</p>
 </footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+
 </body>
 </html>

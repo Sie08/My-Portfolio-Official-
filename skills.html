@@ -3,79 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  
+    <title>jc.labastida</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/skills.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <h2 class="logo">MyPortfolio</h2>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <button id="themeToggle">Theme</button>
-</nav>
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
 
-```html
-<section class="page-section">
-  <h1>Skills</h1>
-  <p>Technologies and tools I use to build quality digital experiences.</p>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo">
+      <span class="animate-shine">jc.labastida</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <button id="themeToggle" class="theme-toggle">
+        <span class="icon"></span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+
+  </nav>
+</header>
+
+<section class="page-section skills-section">
+
+  <div class="skills-header">
+    <h1>Skills & Expertise</h1>
+    <p>Modern tools and technologies I use to design, build, and improve responsive web applications.</p>
+  </div>
 
   <div class="skills-grid">
 
+    <!-- Frontend -->
     <div class="skill-card">
       <h3>Frontend Development</h3>
 
       <div class="skill-bar">
-        <label>HTML</label>
-        <div class="progress"><span style="width:95%"></span></div>
+        <span>HTML</span>
+        <div class="progress"><div class="fill" style="width:80%"></div></div>
       </div>
 
       <div class="skill-bar">
-        <label>CSS</label>
-        <div class="progress"><span style="width:90%"></span></div>
+        <span>CSS</span>
+        <div class="progress"><div class="fill" style="width:60%"></div></div>
       </div>
 
       <div class="skill-bar">
-        <label>JavaScript</label>
-        <div class="progress"><span style="width:82%"></span></div>
+        <span>JavaScript</span>
+        <div class="progress"><div class="fill" style="width:50%"></div></div>
       </div>
+
     </div>
 
+    <!-- Design -->
     <div class="skill-card">
-      <h3>Design & UI/UX</h3>
-      <p>Figma, Wireframing, Responsive Layouts, User Experience Principles</p>
+      <h3>UI / UX Design</h3>
+      <p>Figma, Wireframing, Responsive Layouts, and user-centered design principles for modern interfaces.</p>
     </div>
 
+    <!-- Workflow -->
+    <div class="skill-card highlight">
+      <h3>Development Workflow</h3>
+      <p>GitHub, VS Code, Canva, and AI-assisted development for faster iteration, debugging, and UI refinement.</p>
+    </div>
+
+    <!-- Tools -->
     <div class="skill-card">
-      <h3>Tools</h3>
-      <p>GitHub, VS Code, Canva, Microsoft Office</p>
+      <h3>Tools & Platforms</h3>
+      <p>GitHub, VS Code, Canva, Microsoft Office, deployment workflows, and version control systems.</p>
+    </div>
+
+    <!-- Communication -->
+    <div class="skill-card highlight">
+      <h3>Communication</h3>
+      <p>Clear communication of ideas, effective collaboration, and ability to simplify technical concepts for better understanding.</p>
     </div>
 
   </div>
+
 </section>
-```html
-<section class="page-section">
-  <h1>Skills</h1>
 
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Frontend</h3>
-      <p>HTML, CSS, JavaScript, Responsive Design</p>
-    </div>
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Jasmen Chelsie Labastida. All rights reserved.</p>
+</footer>
 
-    <div class="skill-card">
-      <h3>Design</h3>
-      <p>Figma, UI/UX Design, Wireframing</p>
-    </div>
+<script src="js/main.js"></script>
 
-    <div class="skill-card">
-      <h3>Tools</h3>
-      <p>GitHub, VS Code, Canva</p>
-    </div>
-  </div>
-</section>
+
+</body>
+</html>
