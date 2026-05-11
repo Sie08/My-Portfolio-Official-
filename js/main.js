@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* =========================
-     MOBILE MENU
-  ========================= */
+  /* MOBILE MENU */
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.querySelector(".nav-links");
 
@@ -12,9 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     ACTIVE LINK
-  ========================= */
+  /* ACTIVE LINK */
   const currentPage =
     window.location.pathname.split("/").pop() || "index.html";
 
@@ -24,9 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /* =========================
-     THEME TOGGLE
-  ========================= */
+  /* THEME TOGGLE */
   const toggle = document.getElementById("themeToggle");
 
   const savedTheme = localStorage.getItem("theme");
@@ -44,9 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     LUCIDE ICONS FIX
-  ========================= */
+  /* UCIDE ICONS */
   if (window.lucide) {
     lucide.createIcons();
   }
