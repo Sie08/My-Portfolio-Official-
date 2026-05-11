@@ -3,9 +3,7 @@ function toggleProject(button) {
   details.classList.toggle("show");
 }
 
-/* =========================
-   FILTER SYSTEM
-========================= */
+/* FILTER SYSTEM */
 
 function filterProjects(category) {
   const cards = document.querySelectorAll(".project-card");
