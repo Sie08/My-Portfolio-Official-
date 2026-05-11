@@ -1,12 +1,8 @@
-/* =========================
-   MAIN GLOBAL CSS (ELITE VIOLET SYSTEM - FIXED)
-========================= */
+/*MAIN  CSS */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-/* =========================
-   ROOT VARIABLES
-========================= */
+/* ROOT VARIABLES */
 
 :root{
 
@@ -37,9 +33,7 @@
   --transition:all .3s ease;
 }
 
-/* =========================
-   DARK MODE
-========================= */
+/* DARK MODE */
 
 body.dark-mode{
 
@@ -61,9 +55,7 @@ body.dark-mode{
   --shadow-hover:0 26px 70px rgba(139,92,246,.28);
 }
 
-/* =========================
-   RESET
-========================= */
+/* RESET */
 
 *{
   margin:0;
@@ -98,9 +90,7 @@ img{
   max-width:100%;
 }
 
-/* =========================
-   NAVBAR (STABLE GLASS)
-========================= */
+/* NAVBAR */
 
 .navbar{
   display:flex;
@@ -124,9 +114,7 @@ img{
   transition:var(--transition);
 }
 
-/* =========================
-   LOGO
-========================= */
+/* LOGO */
 
 .logo{
   display:flex;
@@ -145,9 +133,7 @@ img{
   border-radius:8px;
 }
 
-/* =========================
-   NAV LINKS
-========================= */
+/* NAV LINKS */
 
 .nav-links{
   display:flex;
@@ -190,9 +176,7 @@ img{
   width:100%;
 }
 
-/* =========================
-   NAV CONTROLS
-========================= */
+/* NAV CONTROLS */
 
 .nav-controls{
   display:flex;
@@ -200,9 +184,7 @@ img{
   gap:12px;
 }
 
-/* =========================
-   THEME TOGGLE (FIXED STABILITY)
-========================= */
+/* THEME TOGGLE */
 
 .theme-toggle{
   width:46px;
@@ -279,9 +261,7 @@ body.dark-mode .theme-toggle .icon::after{
   background:var(--bg);
 }
 
-/* =========================
-   HERO (CLEAN LAYOUT FIX)
-========================= */
+/* HERO */
 
 .hero{
   display:flex;
@@ -309,9 +289,7 @@ body.dark-mode .theme-toggle .icon::after{
   transition:var(--transition);
 }
 
-/* =========================
-   TEXT
-========================= */
+/* TEXT */
 
 .hero-title{
   font-size:2.5rem;
@@ -329,9 +307,7 @@ body.dark-mode .theme-toggle .icon::after{
   margin-top:15px;
 }
 
-/* =========================
-   BUTTONS (FIXED CONSISTENCY)
-========================= */
+/* BUTTONS */
 
 .hero-buttons{
   display:flex;
@@ -390,9 +366,7 @@ body.dark-mode .theme-toggle .icon::after{
   opacity:.9;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 .footer{
   text-align:center;
