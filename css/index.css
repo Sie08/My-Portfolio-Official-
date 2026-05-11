@@ -1,10 +1,6 @@
-/* =========================
-   HOMEPAGE (ELITE VIOLET SYSTEM)
-========================= */
+/*  HOMEPAGE */
 
-/* =========================
-   HERO LAYOUT
-========================= */
+/*  HERO LAYOUT */
 
 .hero{
   position:relative;
@@ -44,9 +40,7 @@
   pointer-events:none;
 }
 
-/* =========================
-   PROFILE IMAGE
-========================= */
+/* PROFILE IMAGE */
 
 .hero-image{
   position:relative;
@@ -94,9 +88,7 @@
   box-shadow:0 65px 160px rgba(124,58,237,.32);
 }
 
-/* =========================
-   SHINE ANIMATION
-========================= */
+/* ANIMATION */
 
 @keyframes shine{
   0%{
@@ -128,9 +120,7 @@
   animation:shine 3.5s linear infinite;
 }
 
-/* =========================
-   TYPOGRAPHY
-========================= */
+/*  TYPOGRAPHY */
 
 .hero-title{
   font-size:clamp(2.6rem,5.5vw,3.8rem);
@@ -187,9 +177,7 @@
   border-radius:10px;
 }
 
-/* =========================
-   HERO BUTTONS PREMIUM
-========================= */
+/*  HERO BUTTONS */
 
 .hero-buttons{
   display:flex;
@@ -259,9 +247,7 @@
   box-shadow:0 12px 24px rgba(124,58,237,.10);
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media (max-width:768px){
 
