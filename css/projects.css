@@ -1,6 +1,4 @@
-/* =========================
-   PROJECTS PAGE (SAAS FEATURE CARD STYLE)
-========================= */
+/* PROJECTS PAGE */
 
 .projects{
   padding:110px 20px;
@@ -24,9 +22,8 @@
   margin-top:10px;
 }
 
-/* =========================
-   GRID (FORCE EQUAL HEIGHT)
-========================= */
+/* 
+   GRID */
 
 .projects-grid{
   display:grid;
@@ -36,9 +33,7 @@
   align-items:stretch; /* KEY FIX */
 }
 
-/* =========================
-   SAAS FEATURE CARD
-========================= */
+/* SAAS FEATURE CARD */
 
 .project-card{
   background:var(--surface);
@@ -64,9 +59,7 @@
   border-color:rgba(124,58,237,0.25);
 }
 
-/* =========================
-   MEDIA (IMAGE / VIDEO)
-========================= */
+/* MEDIA (IMAGE / VIDEO) */
 
 .project-media{
   width:100%;
@@ -75,9 +68,7 @@
   display:block;
 }
 
-/* =========================
-   CONTENT AREA
-========================= */
+/* CONTENT AREA */
 
 .project-content{
   display:flex;
@@ -106,9 +97,7 @@
   margin-bottom:12px;
 }
 
-/* =========================
-   VIEW DETAILS BUTTON (COMPACT SAAS STYLE)
-========================= */
+/* VIEW DETAILS BUTTON */
 
 .view-btn{
   margin-top:auto;
@@ -135,9 +124,7 @@
   box-shadow:var(--shadow-hover);
 }
 
-/* =========================
-   DETAILS PANEL (SAAS ACCORDION STYLE)
-========================= */
+/* DETAILS PANEL */
 
 .details{
   max-height:0;
@@ -173,9 +160,7 @@ body.dark-mode .details{
   padding:14px;
 }
 
-/* =========================
-   DETAILS TEXT STYLE
-========================= */
+/*  DETAILS TEXT STYLE */
 
 .details h3{
   font-size:0.8rem;
@@ -196,9 +181,7 @@ body.dark-mode .details{
   line-height:1.6;
 }
 
-/* =========================
-   TECH TAGS (SAAS BADGES)
-========================= */
+/* TECH TAGS */
 
 .tags{
   display:flex;
@@ -220,9 +203,7 @@ body.dark-mode .details{
   border:1px solid rgba(124,58,237,0.2);
 }
 
-/* =========================
-   LINKS (SAAS CTA BUTTON)
-========================= */
+/*  LINKS (SAAS CTA BUTTON) */
 
 .details a{
   display:inline-block;
@@ -248,9 +229,7 @@ body.dark-mode .details{
   box-shadow:var(--shadow-hover);
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media(max-width:900px){
   .projects-grid{
@@ -258,9 +237,7 @@ body.dark-mode .details{
   }
 }
 
-/* =========================
-   FILTER BUTTONS
-========================= */
+/*  FILTER BUTTONS */
 
 .project-filters{
   margin-top:20px;
@@ -324,9 +301,7 @@ body.dark-mode .details{
   border:none;
 }
 
-/* =========================
-   PROJECT LINKS ROW
-========================= */
+/*  PROJECT LINKS ROW */
 
 .project-links{
   display:flex;
@@ -342,9 +317,7 @@ body.dark-mode .details{
   gap:6px;
 }
 
-/* =========================
-   LIVE BUTTON (GREEN GLOW)
-========================= */
+/*  LIVE BUTTON */
 
 .live-btn{
   background: linear-gradient(135deg, #16a34a, #22c55e);
@@ -355,9 +328,7 @@ body.dark-mode .details{
   box-shadow: 0 0 18px rgba(34, 197, 94, 0.6);
 }
 
-/* =========================
-   GITHUB BUTTON (PURPLE GLOW)
-========================= */
+/* GITHUB BUTTON */
 
 .github-btn{
   background: linear-gradient(135deg, var(--primary), #a855f7);
